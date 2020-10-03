@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <ul id="list">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul> 
+  </div>
+
+  <script>
+    let lis = document.querySelectorAll("#list li");
+    let arr = [1,2,3,4];
+    console.log(Array.isArray(lis));  //false
+    console.log(Array.isArray(arr));   //true
+
+    // let arr = Array.from(lis);
+    // console.log(lis);
+    // console.log(arr);
+
+    // // Array.from(类数组,回调函数,执行回调函数的this)
+    // let data = Array.from(lis,function(item,index) {
+    //   console.log("item: "+ item + "\nindex: " + index + "\nthis: " + this);
+    //   return item;
+    // },document);
+    // console.log(data);
+    
+    
+
+
+    // lis = Array.from(lis,(item,index) => {
+      //现在this就指向了数组
+    // lis = Array.from(lis,function(item,index) {
+    //   console.log(item,index,this);
+    //   return index;
+    // },arr);
+    // console.log(lis);
+  </script>
+</body>
+</html>
